@@ -59,6 +59,15 @@ div {
     border-radius: 16px;
 }
 
+.Framebox2 {
+    width: 200px;
+    height: 250px;
+    margin-left: 400px;
+    margin-top: -250px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
 .row {
     margin: 0;
 }
