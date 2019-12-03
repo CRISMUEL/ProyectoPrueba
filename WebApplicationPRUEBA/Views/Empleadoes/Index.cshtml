@@ -3,91 +3,112 @@
 @{
     ViewBag.Title = "Index";
 }
+<html>
+<head>
 
-<h2>Index</h2>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/EmpleadoDesing.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.codigoEmpleado)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.apellido)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.telefono)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.fechaIngreso)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.salario)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.estatus)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.idManager)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cargo.codigoCargo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Departamento.codigoDepartamento)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Departamento1.codigoDepartamento)
-        </th>
-        <th></th>
-    </tr>
+    
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.codigoEmpleado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.apellido)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.telefono)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.fechaIngreso)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.salario)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.estatus)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.idManager)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cargo.codigoCargo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Departamento.codigoDepartamento)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Departamento1.codigoDepartamento)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
+</head>
+<body class="Parallax">
 
-</table>
+    <p>
+         <h2>Contrato</h2>
+        <a href="/Empleadoes/Create"><input type="submit" value="Contratar empleado" class="btn btn-default" /></a>
+    </p>
+    <table class="table table-bordered text-contene">
+        <tr class="text-contene">
+            <th >
+                @Html.DisplayNameFor(model => model.codigoEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaIngreso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.salario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idManager)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo.codigoCargo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departamento.codigoDepartamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departamento1.codigoDepartamento)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codigoEmpleado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaIngreso)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.salario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.estatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idManager)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cargo.codigoCargo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Departamento.codigoDepartamento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Departamento1.codigoDepartamento)
+                </td>
+                <td>
+                <button>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id })
+                </button>
+                <button>
+                    @Html.ActionLink("Details", "Details", new { id = item.id })
+                </button>
+                <button>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </button>
+                </td>
+            </tr>
+        }
+
+
+    </table>
+</body>
+</html>
