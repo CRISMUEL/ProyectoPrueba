@@ -155,3 +155,4 @@ C:\Users\cabra\source\repos\peterdavid27\pedro1\CRISMUEL\ProyectoPrueba\WebAppli
 C:\Users\cabra\source\repos\peterdavid27\pedro1\CRISMUEL\ProyectoPrueba\WebApplicationPRUEBA\bin\roslyn\VBCSCompiler.exe
 C:\Users\cabra\source\repos\peterdavid27\pedro1\CRISMUEL\ProyectoPrueba\WebApplicationPRUEBA\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\cabra\source\repos\peterdavid27\pedro1\CRISMUEL\ProyectoPrueba\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.csprojAssemblyReference.cache
+C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.csprojAssemblyReference.cache
