@@ -190,6 +190,7 @@
     <Content Include="IMG\icono1.png" />
     <Content Include="IMG\image 1.png" />
     <Content Include="IMG\INDEXimg1.png" />
+    <Content Include="IMG\reuniondetrabajo-empleateya.png" />
     <Content Include="IMG\thumb-1920-365620 1.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
