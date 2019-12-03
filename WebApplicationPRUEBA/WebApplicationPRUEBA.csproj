@@ -132,7 +132,7 @@
     <Compile Include="Controllers\DepartamentoesController.cs" />
     <Compile Include="Controllers\EmpleadoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\NominaController.cs" />
+    <Compile Include="Controllers\NominasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -187,9 +187,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="IMG\departa.png" />
     <Content Include="IMG\icono1.png" />
     <Content Include="IMG\image 1.png" />
     <Content Include="IMG\INDEXimg1.png" />
+    <Content Include="IMG\reuniondetrabajo-empleateya.png" />
     <Content Include="IMG\thumb-1920-365620 1.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -250,10 +252,10 @@
     <Content Include="Views\Cargoes\Details.cshtml" />
     <Content Include="Views\Cargoes\Edit.cshtml" />
     <Content Include="Views\Cargoes\Index.cshtml" />
+    <Content Include="Views\Nominas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Nomina\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

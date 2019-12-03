@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebApplicationPRUEBA.Models.Nomina>
+@using WebApplicationPRUEBA.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="container-mio-2">
+    <div class="box-mio-2">
+        <h1>Nomina</h1>
+        @using (Html.BeginForm("Index", "Nominas", FormMethod.Get))
+        {
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <h3 class="titulo-buscar">Buscar por Mes</h3>
+                        
+                        <input type="submit" value="Buscar" class="btn btn-success btn-buscar" /><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <h3 class="btn-buscar-2">Buscar por Año</h3>
+                        @Html.TextBox("año")
+                        <input type="submit" value="Buscar" class="btn btn-success" /><br />
+                    </div>
+                </div>
+            </div>
+            <input type="submit" name="Button" value="Generar Nomina" class="btn btn-primary" /> <br />
+            @ViewBag.mensaje
+            <br />
+        }
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayName("Año")
+                </th>
+                <th>
+                    @Html.DisplayName("Mes")
+                </th>
+                <th>
+                    @Html.DisplayName("Monto Total de la Nomina")
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.año)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.mes)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.montoTotal)
+                    </td>
+                </tr>
+            }
+
+        </table>
+        <button><a href="./Nominas" class="btn btn-block">Buscar Todos</a></button>
+    </div>
+</div>
