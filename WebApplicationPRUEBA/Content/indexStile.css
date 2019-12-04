@@ -9,7 +9,6 @@
     background: url("/IMG/thumb-1920-365620 1.png");
     /* Parallax effect */
     background-attachment: fixed;
-
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -18,7 +17,6 @@
     background: url("/IMG/thumb-1920-365620 1.png");
     /* Parallax effect */
     background-attachment: fixed;
-   
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -77,13 +75,47 @@ div {
     border-radius: 16px;
 }
 
-.row {
+.Framebox4 {
+    width: 200px;
+    height: 250px;
+    margin-left: 935px;
+    margin-top: -250px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.Framebox5 {
+    width: 200px;
+    height: 260px;
+    margin-left: 935px;
+    margin-top: 50px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.Framebox6 {
+    width: 200px;
+    height: 260px;
+    margin-left:  650px;
+    margin-top: -260px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.Framebox7 {
+    width: 200px;
+    height: 260px;
+    margin-left: 380px;
+    margin-top: -380px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.row{
+
     margin: 0;
 }
 
 .text-fot {
-    font-family:'Times New Roman';
-     font-size:small;
+    font-family: 'Times New Roman';
+    font-size: small;
 }
 
 

@@ -195,9 +195,14 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="IMG\departa.png" />
+    <Content Include="IMG\DERECHO-A-VACACIONES-ESTANDO-DE-BAJA-MÉDICA.jpg" />
+    <Content Include="IMG\DEspido.jpg" />
+    <Content Include="IMG\el-tjue-sentencia-que-las-vacaciones-pagadas-no-se-pierden-aunque-no-se-pidan.jpg" />
     <Content Include="IMG\icono1.png" />
     <Content Include="IMG\image 1.png" />
     <Content Include="IMG\INDEXimg1.png" />
+    <Content Include="IMG\maxresdefault.jpg" />
+    <Content Include="IMG\permisoo.jpg" />
     <Content Include="IMG\reuniondetrabajo-empleateya.png" />
     <Content Include="IMG\thumb-1920-365620 1.png" />
     <Content Include="Models\Model1.Context.tt">
