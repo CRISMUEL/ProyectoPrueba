@@ -152,7 +152,6 @@ C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\bin\System
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\bin\Newtonsoft.Json.xml
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\bin\Antlr3.Runtime.pdb
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.csprojAssemblyReference.cache
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.csproj.CopyComplete
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.dll
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.pdb

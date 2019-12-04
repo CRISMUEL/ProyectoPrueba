@@ -10,29 +10,14 @@
 namespace WebApplicationPRUEBA.Models
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Nomina
+    public partial class salidasMes_Result
     {
-        public int idNomina { get; set; }
-        public Nullable<int> año { get; set; }
-        public string mes { get; set; }
-        public Nullable<decimal> montoTotal { get; set; }
-    }
-
-    public enum Meses
-    {
-        January,
-        February,
-        March,
-        April,
-        May,
-        June,
-        July,
-        August,
-        September,
-        October,
-        November,
-        December
+        public string Empleado { get; set; }
+        public int id { get; set; }
+        public int idEmpleado { get; set; }
+        public string tipoSalida { get; set; }
+        public string motivo { get; set; }
+        public Nullable<System.DateTime> fechaSalida { get; set; }
     }
 }

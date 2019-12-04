@@ -6,8 +6,6 @@
 }
 
 <h2>Index</h2>
-<div class="container-mio-2">
-    <div class="box-mio-2">
         <h1>Nomina</h1>
         @using (Html.BeginForm("Index", "Nominas", FormMethod.Get))
         {
@@ -15,7 +13,11 @@
                 <div class="form-group">
                     <div class="col-md-10">
                         <h3 class="titulo-buscar">Buscar por Mes</h3>
-                        
+                        @Html.DropDownList("mes",
+                        new SelectList(Enum.GetValues(typeof(Meses))),
+                                            "Seleccione",
+                        new { @class = "form-control" })
+
                         <input type="submit" value="Buscar" class="btn btn-success btn-buscar" /><br />
                     </div>
                 </div>
@@ -65,5 +67,4 @@
 
         </table>
         <button><a href="./Nominas" class="btn btn-block">Buscar Todos</a></button>
-    </div>
-</div>
+   

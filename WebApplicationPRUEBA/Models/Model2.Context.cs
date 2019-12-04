@@ -12,11 +12,13 @@ namespace WebApplicationPRUEBA.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
-    public partial class RecursosHumanosEntities : DbContext
+    public partial class RecursosHumanosEntities1 : DbContext
     {
-        public RecursosHumanosEntities()
-            : base("name=RecursosHumanosEntities")
+        public RecursosHumanosEntities1()
+            : base("name=RecursosHumanosEntities1")
         {
         }
     
@@ -33,7 +35,23 @@ namespace WebApplicationPRUEBA.Models
         public virtual DbSet<Permiso> Permisos { get; set; }
         public virtual DbSet<Salida> Salidas { get; set; }
         public virtual DbSet<Vacacione> Vacaciones { get; set; }
-
-        public System.Data.Entity.DbSet<WebApplicationPRUEBA.Models.EmpleadosActivo> EmpleadosActivoes { get; set; }
+        public virtual DbSet<CantSalida> CantSalidas { get; set; }
+        public virtual DbSet<EmpleadosActivo> EmpleadosActivos { get; set; }
+        public virtual DbSet<EmpleadosInactivo> EmpleadosInactivos { get; set; }
+        public virtual DbSet<Entrada> Entradas { get; set; }
+    
+        public virtual ObjectResult<Calcular_Nomina_Result> Calcular_Nomina()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Calcular_Nomina_Result>("Calcular_Nomina");
+        }
+    
+        public virtual ObjectResult<salidasMes_Result> salidasMes(Nullable<int> mes)
+        {
+            var mesParameter = mes.HasValue ?
+                new ObjectParameter("mes", mes) :
+                new ObjectParameter("mes", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<salidasMes_Result>("salidasMes", mesParameter);
+        }
     }
 }

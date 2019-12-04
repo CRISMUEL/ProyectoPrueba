@@ -12,27 +12,11 @@ namespace WebApplicationPRUEBA.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Nomina
+    public partial class Entrada
     {
-        public int idNomina { get; set; }
-        public Nullable<int> año { get; set; }
-        public string mes { get; set; }
-        public Nullable<decimal> montoTotal { get; set; }
-    }
-
-    public enum Meses
-    {
-        January,
-        February,
-        March,
-        April,
-        May,
-        June,
-        July,
-        August,
-        September,
-        October,
-        November,
-        December
+        public int id { get; set; }
+        public string codigoEmpleado { get; set; }
+        public string Empleado { get; set; }
+        public string Fecha_Entrada { get; set; }
     }
 }
