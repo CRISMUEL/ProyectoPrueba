@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -366,8 +366,14 @@
     <Content Include="Views\InfoCargoes\Edit.cshtml" />
     <Content Include="Views\InfoCargoes\Index.cshtml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Content Include="Views\Home\Index2.cshtml" />
 =======
+=======
+
+    <Content Include="Views\Home\Index2.cshtml" />
+
+>>>>>>> a3f7599e5cf6652445c50ef2f385c3fbe9fd251c
     <Content Include="Views\Entradas\Create.cshtml" />
     <Content Include="Views\Entradas\Delete.cshtml" />
     <Content Include="Views\Entradas\Details.cshtml" />
@@ -383,7 +389,11 @@
     <Content Include="Views\InfoSalidas\Details.cshtml" />
     <Content Include="Views\InfoSalidas\Edit.cshtml" />
     <Content Include="Views\InfoSalidas\Index.cshtml" />
+<<<<<<< HEAD
 >>>>>>> c3f729e93fd560354d53fd94cabf570db9c2b4d5
+=======
+
+>>>>>>> a3f7599e5cf6652445c50ef2f385c3fbe9fd251c
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
