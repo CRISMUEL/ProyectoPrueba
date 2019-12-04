@@ -230,6 +230,7 @@
     <Content Include="Content\DepartamentosDesing.css" />
     <Content Include="Content\EmpleadoDesing.css" />
     <Content Include="Content\indexStile.css" />
+    <Content Include="Content\InformesDg.css" />
     <Content Include="Content\MantenimientoDg.css" />
     <Content Include="Content\ProcesosDg.css" />
     <Content Include="favicon.ico" />
@@ -383,6 +384,7 @@
     <Content Include="Views\InfoSalidas\Index.cshtml" />
     <Content Include="Views\Home\Procesos.cshtml" />
     <Content Include="Views\Home\Mantenimiento.cshtml" />
+    <Content Include="Views\Home\Informe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
