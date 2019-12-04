@@ -38,8 +38,8 @@
 }
 
 .div-img {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 16px;
 }
 
@@ -49,28 +49,28 @@ div {
 }
 
 .Framebox {
-    width: 200px;
-    height: 250px;
-    margin-left: 100px;
-    margin-top: 100px;
+    width: 300px;
+    height: 700px;
+    margin-left: 10px;
+    margin-top: 110px;
     background: #FFFFFF;
     border-radius: 16px;
 }
 
 .Framebox2 {
-    width: 200px;
-    height: 250px;
-    margin-left: 380px;
-    margin-top: -250px;
+    width: 300px;
+    height: 700px;
+    margin-left: 500px;
+    margin-top: -700px;
     background: #FFFFFF;
     border-radius: 16px;
 }
 
 .Framebox3 {
-    width: 200px;
-    height: 250px;
-    margin-left: 650px;
-    margin-top: -250px;
+    width: 300px;
+    height: 700px;
+    margin-left: 950px;
+    margin-top: -707px;
     background: #FFFFFF;
     border-radius: 16px;
 }
@@ -79,10 +79,11 @@ div {
     width: 200px;
     height: 250px;
     margin-left: 935px;
-    margin-top: -250px;
+    margin-top: -230px;
     background: #FFFFFF;
     border-radius: 16px;
 }
+
 .Framebox5 {
     width: 200px;
     height: 260px;
@@ -91,10 +92,11 @@ div {
     background: #FFFFFF;
     border-radius: 16px;
 }
+
 .Framebox6 {
     width: 200px;
     height: 260px;
-    margin-left:  650px;
+    margin-left: 650px;
     margin-top: -260px;
     background: #FFFFFF;
     border-radius: 16px;
@@ -104,30 +106,37 @@ div {
     width: 200px;
     height: 260px;
     margin-left: 380px;
-<<<<<<< HEAD
-    margin-top: -380px;
-=======
     margin-top: -256px;
     background: #FFFFFF;
     border-radius: 16px;
 }
+
 .Framebox8 {
     width: 200px;
     height: 260px;
     margin-left: 100px;
     margin-top: -257px;
->>>>>>> 55556a65604e22f23a8238435026dcceb292976a
     background: #FFFFFF;
     border-radius: 16px;
 }
-.row{
 
+.row {
     margin: 0;
 }
 
 .text-fot {
     font-family: 'Times New Roman';
-    font-size: small;
+    font-size: 35px;
+}
+
+.text-form {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+}
+
+.text-form2 {
+    font-family: 'Times New Roman';
+    font-size: 35px;
 }
 
 
