@@ -134,6 +134,7 @@
     <Compile Include="Controllers\EmpleadosActivoesController.cs" />
     <Compile Include="Controllers\EmpleadosInactivoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InfoCargoesController.cs" />
     <Compile Include="Controllers\InfoDepartamentoesController.cs" />
     <Compile Include="Controllers\LicenciasController.cs" />
     <Compile Include="Controllers\NominasController.cs" />
@@ -353,6 +354,11 @@
     <Content Include="Views\InfoDepartamentoes\Details.cshtml" />
     <Content Include="Views\InfoDepartamentoes\Edit.cshtml" />
     <Content Include="Views\InfoDepartamentoes\Index.cshtml" />
+    <Content Include="Views\InfoCargoes\Create.cshtml" />
+    <Content Include="Views\InfoCargoes\Delete.cshtml" />
+    <Content Include="Views\InfoCargoes\Details.cshtml" />
+    <Content Include="Views\InfoCargoes\Edit.cshtml" />
+    <Content Include="Views\InfoCargoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
