@@ -10,107 +10,107 @@ using WebApplicationPRUEBA.Models;
 
 namespace WebApplicationPRUEBA.Controllers
 {
-    public class EmpleadosActivoesController : Controller
+    public class EmpleadosInactivoesController : Controller
     {
         private RecursosHumanosEntities1 db = new RecursosHumanosEntities1();
 
-        // GET: EmpleadosActivoes
+        // GET: EmpleadosInactivoes
         public ActionResult Index()
         {
-            return View(db.EmpleadosActivos.ToList());
+            return View(db.EmpleadosInactivos.ToList());
         }
 
-        // GET: EmpleadosActivoes/Details/5
+        // GET: EmpleadosInactivoes/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EmpleadosActivo empleadosActivo = db.EmpleadosActivos.Find(id);
-            if (empleadosActivo == null)
+            EmpleadosInactivo empleadosInactivo = db.EmpleadosInactivos.Find(id);
+            if (empleadosInactivo == null)
             {
                 return HttpNotFound();
             }
-            return View(empleadosActivo);
+            return View(empleadosInactivo);
         }
 
-        // GET: EmpleadosActivoes/Create
+        // GET: EmpleadosInactivoes/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: EmpleadosActivoes/Create
+        // POST: EmpleadosInactivoes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,codigoEmpleado,nombre,apellido,telefono,idDepartamento,idCargo,fechaIngreso,salario,estatus,idManager")] EmpleadosActivo empleadosActivo)
+        public ActionResult Create([Bind(Include = "id,codigoEmpleado,nombre,apellido,telefono,idDepartamento,idCargo,fechaIngreso,salario,estatus,idManager")] EmpleadosInactivo empleadosInactivo)
         {
             if (ModelState.IsValid)
             {
-                db.EmpleadosActivos.Add(empleadosActivo);
+                db.EmpleadosInactivos.Add(empleadosInactivo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(empleadosActivo);
+            return View(empleadosInactivo);
         }
 
-        // GET: EmpleadosActivoes/Edit/5
+        // GET: EmpleadosInactivoes/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EmpleadosActivo empleadosActivo = db.EmpleadosActivos.Find(id);
-            if (empleadosActivo == null)
+            EmpleadosInactivo empleadosInactivo = db.EmpleadosInactivos.Find(id);
+            if (empleadosInactivo == null)
             {
                 return HttpNotFound();
             }
-            return View(empleadosActivo);
+            return View(empleadosInactivo);
         }
 
-        // POST: EmpleadosActivoes/Edit/5
+        // POST: EmpleadosInactivoes/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,codigoEmpleado,nombre,apellido,telefono,idDepartamento,idCargo,fechaIngreso,salario,estatus,idManager")] EmpleadosActivo empleadosActivo)
+        public ActionResult Edit([Bind(Include = "id,codigoEmpleado,nombre,apellido,telefono,idDepartamento,idCargo,fechaIngreso,salario,estatus,idManager")] EmpleadosInactivo empleadosInactivo)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(empleadosActivo).State = EntityState.Modified;
+                db.Entry(empleadosInactivo).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(empleadosActivo);
+            return View(empleadosInactivo);
         }
 
-        // GET: EmpleadosActivoes/Delete/5
+        // GET: EmpleadosInactivoes/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EmpleadosActivo empleadosActivo = db.EmpleadosActivos.Find(id);
-            if (empleadosActivo == null)
+            EmpleadosInactivo empleadosInactivo = db.EmpleadosInactivos.Find(id);
+            if (empleadosInactivo == null)
             {
                 return HttpNotFound();
             }
-            return View(empleadosActivo);
+            return View(empleadosInactivo);
         }
 
-        // POST: EmpleadosActivoes/Delete/5
+        // POST: EmpleadosInactivoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            EmpleadosActivo empleadosActivo = db.EmpleadosActivos.Find(id);
-            db.EmpleadosActivos.Remove(empleadosActivo);
+            EmpleadosInactivo empleadosInactivo = db.EmpleadosInactivos.Find(id);
+            db.EmpleadosInactivos.Remove(empleadosInactivo);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

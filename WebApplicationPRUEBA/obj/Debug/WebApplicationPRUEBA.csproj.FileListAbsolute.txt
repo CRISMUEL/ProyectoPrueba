@@ -155,3 +155,4 @@ C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\bin\Micros
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.csproj.CopyComplete
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.dll
 C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.pdb
+C:\Users\owner\source\repos\WebApplicationPRUEBA\WebApplicationPRUEBA\obj\Debug\WebApplicationPRUEBA.csprojAssemblyReference.cache

@@ -43,22 +43,6 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.idDepartamento)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.idDepartamento)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.idCargo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.idCargo)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.fechaIngreso)
         </dt>
 
@@ -93,6 +77,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
