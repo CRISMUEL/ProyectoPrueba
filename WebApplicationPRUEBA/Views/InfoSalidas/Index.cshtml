@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApplicationPRUEBA.Models.salidasMes_Result>
+﻿@model IEnumerable<WebApplicationPRUEBA.Models.Salida>
 
 @{
     ViewBag.Title = "Index";
@@ -11,9 +11,6 @@
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Empleado)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.idEmpleado)
         </th>
@@ -31,9 +28,6 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Empleado)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.idEmpleado)
         </td>
