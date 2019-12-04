@@ -137,6 +137,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InfoCargoesController.cs" />
     <Compile Include="Controllers\InfoDepartamentoesController.cs" />
+    <Compile Include="Controllers\InfoPermisoesController.cs" />
     <Compile Include="Controllers\LicenciasController.cs" />
     <Compile Include="Controllers\NominasController.cs" />
     <Compile Include="Controllers\PermisoesController.cs" />
@@ -373,6 +374,11 @@
     <Content Include="Views\salidasMes_Result\Details.cshtml" />
     <Content Include="Views\salidasMes_Result\Edit.cshtml" />
     <Content Include="Views\salidasMes_Result\Index.cshtml" />
+    <Content Include="Views\InfoPermisoes\Create.cshtml" />
+    <Content Include="Views\InfoPermisoes\Delete.cshtml" />
+    <Content Include="Views\InfoPermisoes\Details.cshtml" />
+    <Content Include="Views\InfoPermisoes\Edit.cshtml" />
+    <Content Include="Views\InfoPermisoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
