@@ -53,5 +53,7 @@ namespace WebApplicationPRUEBA.Models
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<salidasMes_Result>("salidasMes", mesParameter);
         }
+
+        public System.Data.Entity.DbSet<WebApplicationPRUEBA.Models.salidasMes_Result> salidasMes_Result { get; set; }
     }
 }
