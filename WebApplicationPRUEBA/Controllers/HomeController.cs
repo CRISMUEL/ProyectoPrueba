@@ -13,7 +13,12 @@ namespace WebApplicationPRUEBA.Controllers
             return View();
         }
 
-        public ActionResult Index2()
+        public ActionResult Mantenimiento()
+        {
+            return View();
+        }
+
+        public ActionResult Procesos()
         {
             return View();
         }
