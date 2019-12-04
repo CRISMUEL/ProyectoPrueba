@@ -133,9 +133,12 @@
     <Compile Include="Controllers\EmpleadoesController.cs" />
     <Compile Include="Controllers\EmpleadosActivoesController.cs" />
     <Compile Include="Controllers\EmpleadosInactivoesController.cs" />
+    <Compile Include="Controllers\EntradasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InfoCargoesController.cs" />
     <Compile Include="Controllers\InfoDepartamentoesController.cs" />
+    <Compile Include="Controllers\InfoPermisoesController.cs" />
+    <Compile Include="Controllers\InfoSalidasController.cs" />
     <Compile Include="Controllers\LicenciasController.cs" />
     <Compile Include="Controllers\NominasController.cs" />
     <Compile Include="Controllers\PermisoesController.cs" />
@@ -362,7 +365,25 @@
     <Content Include="Views\InfoCargoes\Details.cshtml" />
     <Content Include="Views\InfoCargoes\Edit.cshtml" />
     <Content Include="Views\InfoCargoes\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Home\Index2.cshtml" />
+=======
+    <Content Include="Views\Entradas\Create.cshtml" />
+    <Content Include="Views\Entradas\Delete.cshtml" />
+    <Content Include="Views\Entradas\Details.cshtml" />
+    <Content Include="Views\Entradas\Edit.cshtml" />
+    <Content Include="Views\Entradas\Index.cshtml" />
+    <Content Include="Views\InfoPermisoes\Create.cshtml" />
+    <Content Include="Views\InfoPermisoes\Delete.cshtml" />
+    <Content Include="Views\InfoPermisoes\Details.cshtml" />
+    <Content Include="Views\InfoPermisoes\Edit.cshtml" />
+    <Content Include="Views\InfoPermisoes\Index.cshtml" />
+    <Content Include="Views\InfoSalidas\Create.cshtml" />
+    <Content Include="Views\InfoSalidas\Delete.cshtml" />
+    <Content Include="Views\InfoSalidas\Details.cshtml" />
+    <Content Include="Views\InfoSalidas\Edit.cshtml" />
+    <Content Include="Views\InfoSalidas\Index.cshtml" />
+>>>>>>> c3f729e93fd560354d53fd94cabf570db9c2b4d5
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
