@@ -104,7 +104,15 @@ div {
     width: 200px;
     height: 260px;
     margin-left: 380px;
-    margin-top: -380px;
+    margin-top: -256px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.Framebox8 {
+    width: 200px;
+    height: 260px;
+    margin-left: 100px;
+    margin-top: -257px;
     background: #FFFFFF;
     border-radius: 16px;
 }
